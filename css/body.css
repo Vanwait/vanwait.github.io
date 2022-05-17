@@ -227,7 +227,7 @@ h1.background::before {
     padding-right: 50px;
 }
 
-table img{
+.table img{
     padding-left: 15px;
     padding-right: 15px;
     width: 272px;
