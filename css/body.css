@@ -1,0 +1,208 @@
+*{
+    --blue: #48c1bd; 
+    --red: #fc2c00;
+    --h: 'Rain';
+    --texto: 'Roboto';
+}
+
+
+/*Fuentes*/
+@font-face {
+    font-family: 'Rain';
+    src: url(../fonts/AYearWithoutRain.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/RobotoSlab-Light.ttf) format('truetype'); /*Si veo que no se entiende bien, lo hago con el regular*/
+    font-style: normal;
+}
+
+
+.body{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #dbe9e9;
+}
+
+.body .containerLeft {
+    width: 55%;
+    height: 25%;
+    margin: 1 auto;
+    float: left;
+    padding-bottom: 50px;
+}
+
+.body h2{
+    font-family: var(--h), sans-serif;
+    color: var(--red);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+.containerLeft p, .containerRight p{
+    font-family: var(--texto), sans-serif;
+    margin-left: 20px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #1c4348;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.body .containerRight {
+    width: 55%;
+    height: 25%;
+    margin: 1 auto;
+    float: right;
+    padding-bottom: 50px;
+}
+
+.containerLeft a:link, .containerRight a:link{
+    color: var(--red);
+	TEXT-DECORATION: none;
+}
+
+.containerLeft a:visited, .containerRight a:visited {
+    color: var(--red);
+	TEXT-DECORATION: none
+}
+
+.containerLeft a:hover, .containerRight a:hover{ 
+    color: var(--red);
+	TEXT-DECORATION:underline;
+}
+
+
+.logo a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+
+.migasPan{
+    font-size: 13px; 
+    padding-left: 20px;
+}
+
+.migasPan a::after{
+    content: ">";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.migasPan a:last-child::after{
+    content: "";
+}
+
+.migasPan a::backdrop{
+    content: "";
+}
+
+.migasPan a::before{
+    content: "";
+}
+
+.migasPan a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.migasPan a:visited{
+    COLOR:#666666; 
+	TEXT-DECORATION: none
+}
+
+.footer a:hover { 
+	COLOR: #fc2c00;
+	TEXT-DECORATION:underline;
+}
+ 
+
+.container{
+    padding-top: 50px;
+    position: relative;
+    width: all;
+    height: auto;
+    margin: 1 auto;
+    float: center;
+    padding-bottom: 50px;
+}
+
+.containerN{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 1 auto;
+}
+
+.titulo{
+    font-family: var(--h), sans-serif;
+    color: var(--red);
+    font-size: 3em;
+    text-align: center;
+}
+
+.containerPo{
+    width:100%;
+    height: 0px;
+}
+
+h1{
+    font: 40px var(--h), sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1.no-span {
+    display: table;
+    white-space: nowrap;
+}
+
+h1.no-span::before {
+    border-top: 1px solid var(--red);
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 45%;
+    right: 1.5%;
+}
+
+h1.no-span::after{
+    border-top: 1px solid var(--red);
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 44%;
+    left: 1.5%;
+
+}
+
+h1.background {
+    position: relative;
+    z-index: 1;
+}
+
+h1.background span {
+    background: var(--background);
+    padding: 0 15px;
+}
+
+h1.background::before {
+    border-top: 2px solid #dfdfdf;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+  
