@@ -3,6 +3,7 @@
     --red: #fc2c00;
     --h: 'Rain';
     --texto: 'Roboto';
+    --ctexto: #1c4348;
 }
 
 
@@ -50,7 +51,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6em;
-    color: #1c4348;
+    color: var(--ctexto);
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -321,3 +322,39 @@ table img{
       padding-right: 18.5px;
   }
   
+
+
+  /*Equipo*/
+  .flexbox-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 50px;
+  }
+
+  .flexbox-container-inside {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .flexbox-container-inside h3{
+    font-family: var(--texto), sans-serif;
+    color: var(--red);
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .flexbox-container-inside h4{
+    font-family: var(--texto), sans-serif;
+    color: var(--ctexto);
+    font-size: 0.8em;
+    text-align: center;
+}
+
