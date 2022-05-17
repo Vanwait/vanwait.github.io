@@ -42,7 +42,7 @@
 }
 
 
-.containerLeft p, .containerRight p, .containerLeft li, .containerRight li{
+.containerLeft p, .containerRight p, .containerLeft li, .containerRight li, .body p{
     font-family: var(--texto), sans-serif;
     margin-left: 20px;
     text-align: center;
@@ -66,17 +66,17 @@
     padding-bottom: 20px;
 }
 
-.containerLeft a:link, .containerRight a:link{
+.containerLeft a:link, .containerRight a:link, .body p a:link{
     color: var(--red);
 	TEXT-DECORATION: none;
 }
 
-.containerLeft a:visited, .containerRight a:visited {
+.containerLeft a:visited, .containerRight a:visited, .body p a:visited{
     color: var(--red);
 	TEXT-DECORATION: none
 }
 
-.containerLeft a:hover, .containerRight a:hover{ 
+.containerLeft a:hover, .containerRight a:hover, .body p a:hover{ 
     color: var(--red);
 	TEXT-DECORATION:underline;
 }
@@ -202,9 +202,122 @@ h1.background span {
 h1.background::before {
     border-top: 2px solid #dfdfdf;
     content:"";
-    margin: 0 auto; /* this centers the line to the full width specified */
-    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    margin: 0 auto;
+    position: absolute; 
     top: 50%; left: 0; right: 0; bottom: 0;
     width: 95%;
     z-index: -1;
 }
+
+
+.r{
+    float: right;
+    padding-right: 10%;
+    padding-left: 50px;
+    margin: 1 auto;
+    padding-bottom: 150px;
+}
+
+.l{
+    float: left;
+    padding-left: 10%;
+    margin: 1 auto;
+    padding-bottom: 150px;
+    padding-right: 50px;
+}
+
+table img{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 272px;
+    height: 272px;
+}
+
+/* only animate if the device supports hover */
+@media (hover: hover) {
+    #creditcard {
+      /*  set start position */
+      transform: translateY(110px);
+      transition: transform 0.1s ease-in-out;
+      /*  set transition for mouse enter & exit */
+    }
+  
+    #money {
+      /*  set start position */
+      transform: translateY(180px);
+      transition: transform 0.1s ease-in-out;
+      /*  set transition for mouse enter & exit */
+    }
+  
+    button:hover #creditcard {
+      transform: translateY(0px);
+      transition: transform 0.2s ease-in-out;
+      /*  overide transition for mouse enter */
+    }
+  
+    button:hover #money {
+      transform: translateY(0px);
+      transition: transform 0.3s ease-in-out;
+      /*  overide transition for mouse enter */
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.25rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .button:hover .button__text span {
+    transform: translateY(-0.25rem);
+    transition: transform .2s ease-in-out;
+  }
+  
+  /* styling */
+  
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+  
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: purple;
+    padding: 1rem 90px 1rem 2rem;
+    position: relative;
+    border-radius: 8px;
+    letter-spacing: 0.7px;
+    background-color: #5086bd;
+    color: #fff;
+    font-size: 21px;
+    font-family: var(--texto), sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+  
+  .button__svg {
+    position: absolute;
+    overflow: visible;
+    bottom: 6px;
+    right: 0.2rem;
+    height: 140%;
+  }
+
+  table .td{
+      border: hidden;
+      padding-left: 18.5px;
+      padding-right: 18.5px;
+  }
+  
