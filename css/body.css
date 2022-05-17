@@ -42,7 +42,7 @@
 }
 
 
-.containerLeft p, .containerRight p{
+.containerLeft p, .containerRight p, .containerLeft li, .containerRight li{
     font-family: var(--texto), sans-serif;
     margin-left: 20px;
     text-align: center;
@@ -53,6 +53,9 @@
     color: #1c4348;
     padding-left: 20px;
     padding-right: 20px;
+}
+.containerLeft li, .containerRight li{
+    text-align:left;
 }
 
 .body .containerRight {
@@ -137,7 +140,7 @@
 .containerN{
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     margin: 1 auto;
 }
 
@@ -205,4 +208,3 @@ h1.background::before {
     width: 95%;
     z-index: -1;
 }
-  
