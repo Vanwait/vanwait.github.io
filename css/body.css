@@ -508,6 +508,10 @@ h1{
     clip-path: circle();
 }
 
+.containerTabla tr img{
+  float: center;
+}
+
 .containerEmp{
   display: inline-flex;
   width:100%;
@@ -557,5 +561,131 @@ h1{
   align-items: left;
   align-content: left;
   float: left;
+  padding-bottom: 20px;
+}
+
+.containerLP{
+  width:100%;
+  height: auto;
+  margin: 1 auto;
+  float: left;
   padding-bottom: 10px;
+  margin-left: 5%;
+  margin-right: 30%;
+}
+
+.containerRP{
+  width:100%;
+  height: auto;
+  margin: 1 auto;
+  float: right;
+  padding-bottom: 20px;
+}
+
+.containerPro{
+  padding-top: 30px;
+  display: inline-flex;
+  width:100%;
+  height: 1500px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  float: center;
+  padding-bottom: 10px;
+  
+}
+
+/*Barra de Donación*/
+#progressM {
+
+             width: 51.06%; 
+
+  float: left;
+  border-radius: 6px;
+  height: 20px;
+  background: -moz-linear-gradient(-90deg, #71F7F2, var(--blue)); /* For Firefox 3.6 to 15 */
+  z-index: 333;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+#progressJ {
+
+  width: 93.54%; 
+
+float: left;
+border-radius: 6px;
+height: 20px;
+background: -moz-linear-gradient(-90deg, #71F7F2, var(--blue)); /* For Firefox 3.6 to 15 */
+z-index: 333;
+-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+#progressN {
+
+  width: 59.4%; 
+
+float: left;
+border-radius: 6px;
+height: 20px;
+background: -moz-linear-gradient(-90deg, #71F7F2, var(--blue)); /* For Firefox 3.6 to 15 */
+z-index: 333;
+-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+#countdown-wrap {
+  width: 120%;
+  height: 160px;
+  padding: 20px;
+  font-family: var(--h), sans-serif, Arial;
+  font-weight: 500;
+}
+
+#goal {
+  font-size: 35px;
+  text-align: right;
+  width:80%;
+}
+@media only screen and (max-width: 540px) {
+  #goal {
+    text-align: center;
+  }
+}
+
+
+#glass {
+  width: 80%;
+  height: 20px;
+  border-radius: 6px;
+  background-color: #1c4348;
+  float: left;
+  overflow: hidden;
+  background-color: #dee0e0;
+  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+.goal-stat {
+  width: 20%;
+  height: 30px;
+  padding: 10px;
+  float: left;
+  margin: 0;
+}
+@media only screen and (max-width: 540px) {
+  .goal-stat {
+    width: 40%;
+    text-align: center;
+  }
+}
+.goal-number,
+.goal-label {
+  display: block;
+  font-size: 20px;
+}
+.goal-number {
+  font-weight: bold;
+}
+#goal-words {
+  float: right;
+  width: 26%;
+  font-size: 25px;
 }
