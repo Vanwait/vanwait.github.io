@@ -30,6 +30,18 @@
     line-height: 1.6em;
     color: var(--ctexto);
 }
+
+.list{
+  text-align: left;
+  font-family: var(--texto), sans-serif;
+  margin-left: 20%;
+  margin-right: 25%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: var(--ctexto);
+  float: left;
+}
 .body{
     margin: 0;
     font-family: Helvetica, sans-serif;
@@ -76,17 +88,17 @@
     padding-bottom: 20px;
 }
 
-.containerLeft a:link, .containerRight a:link, .body p a:link, .lista a:link{
+.containerLeft a:link, .containerRight a:link, .body p a:link, .lista a:link, .list a:link{
     color: var(--red);
 	TEXT-DECORATION: none;
 }
 
-.containerLeft a:visited, .containerRight a:visited, .body p a:visited, .lista a:visited{
+.containerLeft a:visited, .containerRight a:visited, .body p a:visited, .lista a:visited, .list a:visited{
     color: var(--red);
 	TEXT-DECORATION: none
 }
 
-.containerLeft a:hover, .containerRight a:hover, .body p a:hover, .lista a:hover{ 
+.containerLeft a:hover, .containerRight a:hover, .body p a:hover, .lista a:hover, .list a:hover{ 
     color: var(--red);
 	TEXT-DECORATION:underline;
 }
@@ -391,7 +403,7 @@ h1{
     align-items: center;
     align-content: center;
     float: center;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 .containerButton{
@@ -495,3 +507,16 @@ h1{
 .containerTabla td img{
     clip-path: circle();
 }
+
+.containerEmp{
+  display: inline-flex;
+  width:100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  float: center;
+  padding-bottom: 10px;
+}
+
+
