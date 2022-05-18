@@ -1,5 +1,6 @@
 
 .footer, .footer::before, .footer::after{
+    display: inline-flex;
     width: auto;
     font-family: acumin-pro, system-ui, sans-serif;
     margin: 0;
